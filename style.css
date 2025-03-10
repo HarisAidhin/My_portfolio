@@ -335,13 +335,12 @@ canvas {
   margin: auto;
 }
 
-.controls,
-.username-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 30px;
+.controls, .username-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
 .controls button, #startButton {
