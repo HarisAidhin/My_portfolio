@@ -1,0 +1,576 @@
+/* Reset dan Default Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  max-width: 100%;
+  background: linear-gradient(1deg, #000000, rgb(97, 104, 231));
+}
+
+/*Opening*/
+.opening {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(1deg, #000000, rgb(164, 233, 236));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  z-index: 9999;
+  animation: fadeOut 2.5s forwards;
+  animation-delay: 2s;
+  pointer-events: none;
+}
+
+.opening p {
+  color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  animation: leJoltZoom 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.leJoltZoom span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  /* Warna teks */
+  animation: leJoltZoom 1.5s infinite ease-in-out;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #00f6ff, 0 0 20px #004eff;
+}
+
+/*Efek bergelombang */
+.leJoltZoom span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.leJoltZoom span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.leJoltZoom span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.leJoltZoom span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.leJoltZoom span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.leJoltZoom span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.leJoltZoom span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.leJoltZoom span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.leJoltZoom span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.leJoltZoom span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+.leJoltZoom span:nth-child(11) {
+  animation-delay: 1s;
+}
+
+.leJoltZoom span:nth-child(12) {
+  animation-delay: 1.1s;
+}
+
+.leJoltZoom span:nth-child(13) {
+  animation-delay: 1.2s;
+}
+
+.leJoltZoom span:nth-child(14) {
+  animation-delay: 1.3s;
+}
+
+.leJoltZoom span:nth-child(15) {
+  animation-delay: 1.4s;
+}
+
+.leJoltZoom span:nth-child(16) {
+  animation-delay: 1.5s;
+}
+
+.leJoltZoom span:nth-child(17) {
+  animation-delay: 1.6s;
+}
+
+/* Navigation Bar */
+.container-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100vw;
+  background: linear-gradient(105deg, #6cfec1, #86d5ff, rgb(76, 97, 255));
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.968);
+}
+
+.container-navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.container-navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  margin-right: 25px;
+  transition: color 0.3s ease;
+}
+
+.container-navbar ul li a:hover {
+  color: #000000;
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px#0d00ff;
+}
+
+/* Content Section */
+.container-content1 {
+  text-align: center;
+  animation: leFadeIn 1s ease-in-out;
+}
+
+.container-content1 h3 {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.container-content1 p {
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.imageme img {
+  width: 100px;
+  height: auto;
+  display: flex;
+  margin: 20px auto;
+  border-radius: 50%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.imageme img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px rgb(0, 255, 238);
+}
+
+/* About Me */
+.aboutme {
+  text-align: center;
+  padding: 40px;
+}
+
+.aboutme h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.aboutme p {
+  font-size: 25px;
+  color: #ffffff;
+  margin: 0 auto;
+  animation: leFadeIn 1s ease-in-out;
+}
+
+
+/*Skills*/
+.skills {
+  text-align: center;
+  padding: 40px;
+}
+
+.skills h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.skills p {
+  font-size: 25px;
+  color: #ffffff;
+  margin: 0 auto;
+  animation: leFadeIn 1s ease-in-out;
+}
+
+/* Contact Section */
+.contactme {
+  text-align: center;
+  padding: 40px;
+}
+
+.contactme h4 {
+  font-size: 30px;
+}
+
+.contactme a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #007acc;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.contactme a:hover {
+  background: #000000;
+  box-shadow: 0 0 23px rgb(0, 255, 251);
+}
+
+.Kalkulatorbmi {
+  text-align: center;
+  padding: 4px;
+}
+
+.Kalkulatorbmi h4 {
+  font-size: 34px;
+}
+
+.Kalkulatorbmi p {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0 auto;
+  animation: leFadeIn 1s ease-in-out;
+}
+
+.Kalkulatorbmi a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #007acc;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.Kalkulatorbmi a:hover {
+  background: #000000;
+  box-shadow: 0 0 23px rgb(0, 255, 251);
+}
+
+/* Gallery */
+.Karyaku h3 {
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  /* Biar lebih proporsional */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.Karyaku {
+  display: flex;
+  flex-wrap: wrap;
+  /* Biar gambar turun kalau layar makin kecil */
+  justify-content: center;
+  gap: 15px;
+  /* Jarak antar foto */
+  padding: 40px;
+}
+
+.Karyaku img {
+  width: 100%;
+  max-width: 250px;
+  /* Biar nggak terlalu besar di layar lebar */
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  /* Lebih smooth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Karyaku img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px rgb(96, 78, 255);
+}
+
+/*game*/
+
+.game-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.game-container h3 {
+  color: red;
+}
+
+.game-container p {
+  color: red;
+}
+
+canvas {
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0 50px rgb(96, 78, 255);
+  border: 2px solid rgb(8, 0, 255);
+  display: block;
+  margin: auto;
+}
+
+.controls,
+.username-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.controls button,
+#startButton {
+  padding: 10px;
+  font-size: 16px;
+  margin: 25px;
+  cursor: pointer;
+  background: #4c7caf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.controls button,
+#startButton:hover {
+  box-shadow: 0 0 50px rgb(191, 255, 0);
+  background: rgb(192, 173, 8)
+}
+
+.game-over {
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+  display: none;
+  margin-top: 10px;
+  animation: shake 0.5s ease-in-out;
+}
+
+#usernameInput {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Game h3 {
+  text-align: center;
+  animation: leFadeIn 1s ease-in-out;
+  font-size: 16px;
+  color: #ff0000;
+  margin: 0 auto;
+}
+
+.game-over {
+  text-align: center;
+}
+
+/*watermark*/
+.watermark {
+  text-align: center;
+  font-style: italic;
+  color: #e62323;
+  stroke: black 20px;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  background: #222;
+  box-shadow: 0px -10px 20px rgb(96, 78, 255);
+  color: white;
+  padding: 10px;
+  position: relative;
+  width: 100vw;
+}
+
+/* Biar responsive */
+@media (max-width: 76px) {
+  .container-navbar {
+    flex-direction: column;
+  }
+
+  .container-navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Karyaku img {
+    width: 90%;
+  }
+
+
+}
+
+@media (min-width: 768px) {
+  .container-navbar {
+    padding: 5px;
+    text-align: center;
+    background: linear-gradient(105deg, #4911f2a2, #86d5ff, rgb(76, 97, 255));
+
+  }
+
+  .container-navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .Karyaku {
+    gap: 10px;
+    /* Jarak antar foto lebih kecil */
+  }
+
+  .Karyaku img {
+    max-width: 180px;
+    /* Lebih kecil biar pas */
+  }
+
+  .opening p {
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+  }
+}
+
+@media (max-width:500px) {
+.aboutme p {
+  font-size: 15px;
+}
+}
+.skills p {
+  font-size: 15;
+}
+
+.Kalkulatorbmi p {
+  font-size: 15px;
+}
+
+@media (max-width: 480px) {
+  .Karyaku {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Karyaku img {
+    max-width: 80%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .Karyaku {
+    flex-direction: column;
+    /* Gambar turun ke bawah */
+    align-items: center;
+    /* Posisi tetap tengah */
+  }
+
+  .Karyaku img {
+    max-width: 80%;
+    /* Lebih fleksibel di HP */
+  }
+}
+
+@keyframes leFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes leJoltZoom {
+  0% {
+    transform: scale(1) translateY(0) rotate(0);
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(1.1) translateY(-10px) rotate(-5deg);
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: scale(1.2) translateY(5px) rotate(5deg);
+    opacity: 1;
+  }
+
+  75% {
+    transform: scale(1.1) translateY(-5px) rotate(-3deg);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1) translateY(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+}
+
+/*END*/
+
+
+
+/*BY ADHMRN*/
